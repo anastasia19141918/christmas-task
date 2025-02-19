@@ -364,6 +364,32 @@ li {
   font-size: 2.4rem;
 }
 
+.footer__links {
+  margin: 4% 0 0 0;
+}
+
+.footer__itemns {
+  display: flex;
+  margin: 0;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0 10px;
+}
+
+.footer__itemn {
+  font-size: 1.8rem;
+  color: #B9BF88;
+}
+
+.footer__rs {
+  display: block;
+  width: 57px;
+  height: 57px;
+  background-image: url("../../src/img/footer/rs.png");
+  background-size: 23px 23px;
+  background-repeat: no-repeat;
+}
+
 .main__desk {
   display: flex;
   justify-content: space-between;
