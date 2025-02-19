@@ -435,6 +435,13 @@ li {
   outline: none;
   cursor: pointer;
   background-color: #D9756C;
+  color: #000000;
+  transition: 0.7s ease-in-out;
+}
+
+.main__btn:hover {
+  transition: 0.7s ease-in-out;
+  background-color: #730202;
 }
 
 /*# sourceMappingURL=index.css.map */

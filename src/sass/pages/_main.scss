@@ -1,5 +1,6 @@
 @use "../abstract/constans" as a;
 
+
 .main__desk {
   display: flex;
   justify-content: space-between;
@@ -46,4 +47,12 @@
   outline: none;
   cursor: pointer;
   background-color: a.$color-button;
+  color: a.$color-text-button;
+
+  transition: 0.7s ease-in-out;
+};
+
+.main__btn:hover {
+  transition: 0.7s ease-in-out;
+  background-color: a.$color-border;
 }
