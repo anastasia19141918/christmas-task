@@ -442,6 +442,7 @@ li {
 .main__btn:hover {
   transition: 0.7s ease-in-out;
   background-color: #730202;
+  color: #B9BF88;
 }
 
 /*# sourceMappingURL=index.css.map */
