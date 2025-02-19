@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -330,7 +331,7 @@ li {
 }
 
 .header__nav {
-  padding: 0 10px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -361,6 +362,53 @@ li {
 
 .header__itemn {
   font-size: 2.4rem;
+}
+
+.main__desk {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__title {
+  max-width: 350px;
+  margin: 0 0 20px 0;
+  font-size: 3.6rem;
+  color: #B9BF88;
+}
+
+.main__text {
+  margin: 0 0 60px 0;
+  max-width: 450px;
+  font-size: 2.4rem;
+  color: #B9BF88;
+}
+
+.main__imgs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__img {
+  width: 424px;
+  height: 612px;
+  background-repeat: no-repeat;
+}
+.main__img_first {
+  background-image: url("../../src/img/main/конь.png");
+}
+.main__img_second {
+  background-image: url("../../src/img/main/качели.png");
+}
+
+.main__btn {
+  max-width: 282px;
+  padding: 12px 90px;
+  border-radius: 5px;
+  font-size: 2.4rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #D9756C;
 }
 
 /*# sourceMappingURL=index.css.map */
