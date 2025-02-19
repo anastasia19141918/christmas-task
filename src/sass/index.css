@@ -331,10 +331,10 @@ li {
 }
 
 .header__nav {
-  padding: 10px;
+  padding: 10px 2px;
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
 }
 
 .header__icon {
