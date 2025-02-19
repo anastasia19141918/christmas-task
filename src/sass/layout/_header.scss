@@ -1,0 +1,35 @@
+@use "../abstract/constans" as a;
+
+.header__nav {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+};
+
+.header__icon {
+  width: 97px;
+  height: 125px;
+  background-size: 97px 125px;
+  background-image: url('../../src/img/header/icon.png');
+  cursor: pointer;
+};
+
+.header__links {
+  display: flex;
+  gap: 0px 80px;
+};
+
+.header__link {
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+}
+
+.header__link:hover {
+  transition: 0.3s ease-in-out;
+  border-bottom: 3px solid a.$color-border;
+}
+
+.header__itemn {
+  font-size: 2.4rem;
+}

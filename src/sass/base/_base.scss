@@ -1,0 +1,18 @@
+@use "../abstract/constans" as a;
+
+html {
+  font-size: 10px;
+};
+
+.body {
+  background-color: a.$color-body;
+};
+
+a {
+  text-decoration: none;
+  color: a.$color-text;
+};
+
+li {
+  list-style-type: none;
+};
