@@ -2,20 +2,19 @@
 @use "../abstract/mixin" as m;
 
 html {
+  height: 100%;
   font-size: 10px;
-  @include  m.tablet {
-    height: 100%;
-  }
 };
 
 .body {
-  background-color: a.$color-body;
-  @include  m.tablet {
-    margin: 0;
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-  }
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-image: url('../../src/img/main/main.jpg');
+  background-repeat: no-repeat;
+  background-size:cover
 };
 
 a {

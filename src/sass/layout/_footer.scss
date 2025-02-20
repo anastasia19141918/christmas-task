@@ -2,14 +2,15 @@
 @use "../abstract/mixin" as m;
 
 .footer {
-  padding: 0 10px;
+  padding: 10px 10px;
+  background-color:  a.$color-text-button;
   @include m.mobale-big {
     padding: 0 20px;
   }
 }
 
 .footer__links {
-  margin: 4% 0 0 0;
+  margin: 1% 0 0 0;
   @include m.tablet-big {
     margin: 10% 0 0 0;
   };
@@ -36,7 +37,7 @@
     justify-content: flex-start;
   };
   @include m.mobale-footer {
-    margin: 60px 0 0 0;
+    margin: 20px 0 0 0;
   }
 }
 

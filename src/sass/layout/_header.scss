@@ -3,45 +3,25 @@
 
 
 .header {
-  padding: 0 10px;
+  padding: 5px 5px;
+  background-color: a.$color-text-button;
   @include m.desktop {
     padding: 0 20px;
   };
 }
 
 .header__nav {
-  padding: 10px 2px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 };
 
 .header__icon {
-  width: 97px;
-  height: 125px;
-  background-size: 97px 125px;
+  width: 37px;
+  height: 60px;
+  background-size: 37px 60px;
   background-image: url('../../src/img/header/icon.png');
   cursor: pointer;
-  @include m.desktop {
-    width: 87px;
-    height: 105px;
-    background-size: 87px 105px;
-  };
-  @include m.tablet-big {
-    width: 67px;
-    height: 90px;
-    background-size: 67px 90px;
-  };
-  @include m.tablet {
-    width: 47px;
-    height: 70px;
-    background-size: 47px 70px;
-  };
-  @include m.tablet-small {
-    width: 37px;
-    height: 60px;
-    background-size: 37px 60px;
-  }
 };
 
 .header__links {
@@ -66,7 +46,7 @@
 }
 
 .header__itemn {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   @include m.desktop {
     font-size: 2.0rem;
   };

@@ -2,20 +2,25 @@
 @use "../abstract/mixin" as m;
 
 .main {
-  padding: 0 10px;
+  padding: 10% 20px 0%;
+  
   @include m.desktop {
     padding: 0 20px;
   };
-}
+};
 
 .main__desk {
   display: flex;
-  justify-content: space-between;
-  @include m.tablet {
-    justify-content: space-around;
+  justify-content: center;
+  color: a.$color-border;
+  @include m.desktop {
+    margin: 15% 0 0 0;
   };
+  @include m.tablet {
+    margin: 20% 0 0 0;
+  }
   @include m.tablet-small {
-    margin: 8% 0 0 0;
+    margin: 12% 0 0 0;
   };
   @include m.mobale-big {
     margin: 5% 0 0 0;
@@ -26,9 +31,9 @@
 };
 
 .main__title {
-  max-width: 350px;
-  margin: 0 0 20px 0;
-  font-size: 3.6rem;
+  max-width: 100%;
+  margin: 0 0 2% 0;
+  font-size: 4.2rem;
   color: a.$color-text;
   @include m.desktop {
     font-size: 2.5rem;
@@ -46,80 +51,34 @@
 };
 
 .main__text {
-  margin: 0 0 60px 0;
-  max-width: 450px;
+  margin: 0 0 5% 0;
+  padding: 20px;
   font-size: 2.4rem;
   color: a.$color-text;
+  background-color: a.$color-rbd-text;
   @include m.desktop {
-    max-width: 350px;
     font-size: 2.0rem;
   };
   @include m.tablet-big {
     font-size: 1.8rem;
   };
   @include m.tablet {
+    margin: 0 0 15% 0;
     font-size: 1.6rem;
   };
   @include m.tablet-small {
-    margin: 0 0 30px 0;
-    font-size: 1.3rem;
-  };
-  @include m.mobale-big {
-    margin: 0 0 60px 0;
+    margin: 0 0 18% 0;
     font-size: 1.4rem;
   };
   @include m.mobale {
-    margin: 0 0 20px 0;
+    margin: 0 0 30% 0;
     font-size: 1.4rem;
   };
   @include m.mobale-small {
-    margin: 0 0 30px 0;
-    font-size: 1.8rem;
+    margin: 0 0 20% 0;
+    font-size: 1.5rem;
   };
 }
-
-.main__imgs {
-  display: flex;
-  justify-content: space-between;
-};
-
-.main__img {
-  width: 424px;
-  height: 612px;
-  background-repeat: no-repeat;
-  &_first {
-    background-image: url('../../src/img/main/конь.png');
-    @include m.mobale-small {
-      display: none;
-    }
-  };
-  &_second{
-    background-image: url('../../src/img/main/качели.png');
-    @include m.tablet {
-      display: none;
-    }
-  };
-  @include m.desktop {
-    width: 324px;
-    height: 512px;
-    background-size: 324px 512px;
-  };
-  @include m.tablet-big {
-    width: 224px;
-    height: 390px;
-    background-size: 224px 390px;
-  };
-  @include m.tablet {
-    width: 190px;
-    height: 290px;
-    background-size: 190px 290px;
-  };
-  @include m.mobale-big {
-    width: 130px;
-    height: 220px;
-    background-size: 130px 220px;
-  }
-};
 
 .main__button {
   @include m.mobale-small {
@@ -132,7 +91,7 @@
   max-width: 282px;
   padding: 12px 90px;
   border-radius: 5px;
-  font-size: 2.4rem;
+  font-size: 2.9rem;
   border: none;
   outline: none;
   cursor: pointer;
@@ -148,13 +107,19 @@
     font-size: 1.7rem;
   };
   @include m.tablet {
-    padding: 10px 60px;
-    font-size: 1.3rem;
+    padding: 20px 95px;
+    font-size: 1.9rem;
   };
   @include m.tablet-small {
-    padding: 8px 40px;
-    font-size: 1.1rem;
+    padding: 20px 95px;
+    font-size: 1.6rem;
   };
+
+  @include m.mobale {
+    padding: 10px 75px;
+    font-size: 1.3rem;
+  }
+
   @include m.mobale-footer {
     padding: 10px 60px;
     font-size: 1.5rem;
