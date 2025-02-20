@@ -421,7 +421,7 @@ li {
 }
 @media (max-width: 410px) {
   .footer {
-    padding: 0 20px;
+    padding: 20px 20px 0px;
   }
 }
 
@@ -601,6 +601,11 @@ li {
   .main__text {
     margin: 0 0 18% 0;
     font-size: 1.4rem;
+  }
+}
+@media (max-width: 410px) {
+  .main__text {
+    margin: 0 0 30% 0;
   }
 }
 @media (max-width: 365px) {
