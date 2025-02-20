@@ -1,7 +1,25 @@
 @use "../abstract/constans" as a;
+@use "../abstract/mixin" as m;
+
+.footer {
+  padding: 0 10px;
+  @include m.mobale-big {
+    padding: 0 20px;
+  }
+}
 
 .footer__links {
   margin: 4% 0 0 0;
+  @include m.tablet-big {
+    margin: 10% 0 0 0;
+  };
+  @include m.tablet {
+    margin: 0 0 1% 0;
+  };
+
+  @include m.tablet-small {
+    margin: 0 0 6% 0;
+  }
 }
 
 .footer__itemns {
@@ -10,11 +28,27 @@
   flex-direction: row;
   justify-content: center;
   gap: 0 10px;
+  @include m.tablet {
+    align-items: end;
+  };
+  @include m.mobale-big {
+    padding: 0;
+    justify-content: flex-start;
+  };
+  @include m.mobale-footer {
+    margin: 60px 0 0 0;
+  }
 }
 
 .footer__itemn {
   font-size: 1.8rem;
   color: a.$color-text;
+  @include m.tablet-big {
+    font-size: 1.5rem;
+  };
+  @include m.mobale-big {
+    font-size: 1.2rem;
+  }
 };
 
 .footer__rs {
@@ -24,4 +58,14 @@
   background-image: url('../../src/img/footer/rs.png');
   background-size: 23px 23px;
   background-repeat: no-repeat;
+  @include m.tablet-big {
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+  };
+  @include m.mobale-big {
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+  }
 }

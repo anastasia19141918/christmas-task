@@ -1,11 +1,21 @@
 @use "../abstract/constans" as a;
+@use "../abstract/mixin" as m;
 
 html {
   font-size: 10px;
+  @include  m.tablet {
+    height: 100%;
+  }
 };
 
 .body {
   background-color: a.$color-body;
+  @include  m.tablet {
+    margin: 0;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
 };
 
 a {

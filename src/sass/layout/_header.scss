@@ -1,4 +1,13 @@
 @use "../abstract/constans" as a;
+@use "../abstract/mixin" as m;
+
+
+.header {
+  padding: 0 10px;
+  @include m.desktop {
+    padding: 0 20px;
+  };
+}
 
 .header__nav {
   padding: 10px 2px;
@@ -13,11 +22,34 @@
   background-size: 97px 125px;
   background-image: url('../../src/img/header/icon.png');
   cursor: pointer;
+  @include m.desktop {
+    width: 87px;
+    height: 105px;
+    background-size: 87px 105px;
+  };
+  @include m.tablet-big {
+    width: 67px;
+    height: 90px;
+    background-size: 67px 90px;
+  };
+  @include m.tablet {
+    width: 47px;
+    height: 70px;
+    background-size: 47px 70px;
+  };
+  @include m.tablet-small {
+    width: 37px;
+    height: 60px;
+    background-size: 37px 60px;
+  }
 };
 
 .header__links {
   display: flex;
   gap: 0px 80px;
+  @include m.tablet {
+    gap: 0px 10px;
+  }
 };
 
 .header__link {
@@ -28,8 +60,26 @@
 .header__link:hover {
   transition: 0.3s ease-in-out;
   border-bottom: 3px solid a.$color-border;
+  @include m.tablet-big {
+    border-bottom: none;
+  }
 }
 
 .header__itemn {
   font-size: 2.4rem;
+  @include m.desktop {
+    font-size: 2.0rem;
+  };
+  @include m.tablet-big {
+    font-size: 1.4rem;
+  };
+  @include m.tablet {
+    font-size: 1.2rem;
+  };
+  @include m.tablet-small {
+    font-size: 1.0rem;
+  };
+  @include m.mobale-footer {
+    font-size: 1.5rem;
+  }
 }

@@ -1,9 +1,28 @@
 @use "../abstract/constans" as a;
+@use "../abstract/mixin" as m;
 
+.main {
+  padding: 0 10px;
+  @include m.desktop {
+    padding: 0 20px;
+  };
+}
 
 .main__desk {
   display: flex;
   justify-content: space-between;
+  @include m.tablet {
+    justify-content: space-around;
+  };
+  @include m.tablet-small {
+    margin: 8% 0 0 0;
+  };
+  @include m.mobale-big {
+    margin: 5% 0 0 0;
+  };
+  @include m.mobale-small {
+    margin: 10% 0 0 0;
+  }
 };
 
 .main__title {
@@ -11,6 +30,19 @@
   margin: 0 0 20px 0;
   font-size: 3.6rem;
   color: a.$color-text;
+  @include m.desktop {
+    font-size: 2.5rem;
+  };
+  @include m.tablet-big {
+    font-size: 2.2rem;
+  };
+  @include m.tablet-small {
+    margin: 0 0 70px 0;
+    font-size: 2.0rem;
+  };
+  @include m.mobale-big {
+    margin: 0 0 30px 0;
+  }
 };
 
 .main__text {
@@ -18,7 +50,32 @@
   max-width: 450px;
   font-size: 2.4rem;
   color: a.$color-text;
-
+  @include m.desktop {
+    max-width: 350px;
+    font-size: 2.0rem;
+  };
+  @include m.tablet-big {
+    font-size: 1.8rem;
+  };
+  @include m.tablet {
+    font-size: 1.6rem;
+  };
+  @include m.tablet-small {
+    margin: 0 0 30px 0;
+    font-size: 1.3rem;
+  };
+  @include m.mobale-big {
+    margin: 0 0 60px 0;
+    font-size: 1.4rem;
+  };
+  @include m.mobale {
+    margin: 0 0 20px 0;
+    font-size: 1.4rem;
+  };
+  @include m.mobale-small {
+    margin: 0 0 30px 0;
+    font-size: 1.8rem;
+  };
 }
 
 .main__imgs {
@@ -32,11 +89,44 @@
   background-repeat: no-repeat;
   &_first {
     background-image: url('../../src/img/main/конь.png');
+    @include m.mobale-small {
+      display: none;
+    }
   };
   &_second{
     background-image: url('../../src/img/main/качели.png');
+    @include m.tablet {
+      display: none;
+    }
   };
+  @include m.desktop {
+    width: 324px;
+    height: 512px;
+    background-size: 324px 512px;
+  };
+  @include m.tablet-big {
+    width: 224px;
+    height: 390px;
+    background-size: 224px 390px;
+  };
+  @include m.tablet {
+    width: 190px;
+    height: 290px;
+    background-size: 190px 290px;
+  };
+  @include m.mobale-big {
+    width: 130px;
+    height: 220px;
+    background-size: 130px 220px;
+  }
 };
+
+.main__button {
+  @include m.mobale-small {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .main__btn {
   max-width: 282px;
@@ -50,10 +140,33 @@
   color: a.$color-text-button;
 
   transition: 0.7s ease-in-out;
+  @include m.desktop {
+    max-width: 202px;
+    font-size: 2.0rem;
+  };
+  @include m.tablet-big {
+    font-size: 1.7rem;
+  };
+  @include m.tablet {
+    padding: 10px 60px;
+    font-size: 1.3rem;
+  };
+  @include m.tablet-small {
+    padding: 8px 40px;
+    font-size: 1.1rem;
+  };
+  @include m.mobale-footer {
+    padding: 10px 60px;
+    font-size: 1.5rem;
+  }
 };
 
 .main__btn:hover {
   transition: 0.7s ease-in-out;
   background-color: a.$color-border;
   color: a.$color-text;
+  @include m.tablet-big {
+    background-color: a.$color-button;
+    color: a.$color-text-button;
+  }
 }
