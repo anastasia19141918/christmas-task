@@ -2,19 +2,32 @@
 @use "../abstract/mixin" as m;
 
 .main {
-  padding: 10% 20px 0%;
-  
-  @include m.desktop {
-    padding: 0 20px;
+  position: relative;
+  z-index: 0;
+  padding: 15% 20px 20%;
+ @include m.desktop {
+    padding: 15% 20px 20%;
   };
 };
+
+.main::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+
+.main__inf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .main__desk {
   display: flex;
   justify-content: center;
-  color: a.$color-border;
   @include m.desktop {
-    margin: 15% 0 0 0;
+    margin: 15% 0 30% 0;
   };
   @include m.tablet {
     margin: 20% 0 0 0;
@@ -34,7 +47,8 @@
   max-width: 100%;
   margin: 0 0 2% 0;
   font-size: 4.2rem;
-  color: a.$color-text;
+  color: a.$color-text-button;
+  border-radius: 25px;
   @include m.desktop {
     font-size: 2.5rem;
   };
@@ -54,8 +68,9 @@
   margin: 0 0 5% 0;
   padding: 20px;
   font-size: 2.4rem;
-  color: a.$color-text;
-  background-color: a.$color-rbd-text;
+  color: a.$color-text-button;
+ 
+  
   @include m.desktop {
     font-size: 2.0rem;
   };
@@ -91,15 +106,16 @@
 }
 
 .main__btn {
-  max-width: 282px;
-  padding: 12px 90px;
+  max-width: 382px;
+  padding: 20px 120px;
   border-radius: 5px;
-  font-size: 2.9rem;
+  font-size: 1.8rem;
   border: none;
   outline: none;
   cursor: pointer;
   background-color: a.$color-button;
   color: a.$color-text-button;
+  border-radius: 30px;
 
   transition: 0.7s ease-in-out;
   @include m.desktop {

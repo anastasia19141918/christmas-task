@@ -2,8 +2,7 @@
 @use "../abstract/mixin" as m;
 
 .footer {
-  padding: 10px 10px;
-  background-color:  a.$color-text-button;
+  padding: 10px;
   @include m.mobale-big {
     padding: 20px 20px 0px;
   }
@@ -41,9 +40,9 @@
   }
 }
 
-.footer__itemn {
+.footer__itemn,.footer__gitub {
   font-size: 1.8rem;
-  color: a.$color-text;
+  color: a.$color-text-button;
   @include m.tablet-big {
     font-size: 1.5rem;
   };

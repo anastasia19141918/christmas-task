@@ -12,9 +12,11 @@ html {
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  background-image: url('../../src/img/main/main.jpg');
-  background-repeat: no-repeat;
-  background-size:cover
+  background-color: a.$color-body;
+  background-image: url('../../src/img/main/bg-snow.png');
+  background-size: cover;
+  background-repeat:repeat;
+  background-position: center center;
 };
 
 a {
