@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/anastasia19141918/christmas-task/issues"
   },
-  "homepage": "https://github.com/anastasia19141918/christmas-task#readme"
+  "homepage": "https://github.com/anastasia19141918/christmas-task#readme",
+  "dependencies": {
+    "typescript": "^5.7.3"
+  }
 }

@@ -361,11 +361,15 @@ li {
   white-space: 1px;
   color: #F2C12E;
   cursor: pointer;
-  transition: 0.6s color ease-in-out;
+  transition: 0.3s color ease-in-out;
 }
 
 .header__link:hover, .header__icon:hover {
-  transition: 0.6s color ease-in-out;
+  transition: 0.3s color ease-in-out;
+  color: #730202;
+}
+
+.header__link_active {
   color: #730202;
 }
 
@@ -653,6 +657,14 @@ li {
     background-color: #D9756C;
     color: #000000;
   }
+}
+
+.toys__main {
+  border: 2px solid #000000;
+}
+
+.christmas-tree__main {
+  border: 2px solid #ffffff;
 }
 
 /*# sourceMappingURL=index.css.map */
