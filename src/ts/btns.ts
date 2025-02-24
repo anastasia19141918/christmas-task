@@ -24,4 +24,5 @@ function getSection (element) {
     christmasTree.classList.add('christmas-tree__main__active');
     toys.classList.remove('toys__main__active');
   }
-}
+};
+
