@@ -24,3 +24,4 @@ function getSection(element) {
         toys.classList.remove('toys__main__active');
     }
 }
+;
