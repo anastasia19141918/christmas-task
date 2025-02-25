@@ -12,10 +12,10 @@
     <div class="wrapper">
       <div class="header__nav">
         <div class="header__icon">Главная</div>
-        <nav class="header__navigation" id="header__navigation">
+        <ul class="header__navigation" id="header__navigation">
           <li class="header__link  header__link_active">Игрушки</li>
           <li class="header__link">Ёлка</li>
-        </nav>
+        </ul>
       </div>
     </div>
   </header>
@@ -24,7 +24,68 @@
     <section class="toys toys__main__active ">
       <div class="wrapper">
         <div class="toys__main">
-          Игрушки
+          <div class="toys__filters">
+            <input type="search" class="toys__search" autocomplete="off" placeholder="search">
+
+            <div class="toys__forms">
+              <span class="toys__title">Форма:</span>
+              <div class="toys__balls">
+                <button class="toys__ball toys__ball_first"></button>
+                <button class="toys__ball toys__ball_second"></button>
+                <button class="toys__ball toys__ball_third"></button>
+                <button class="toys__ball toys__ball_fourth"></button>
+                <button class="toys__ball toys__ball_fifth"></button>
+              </div>
+            </div>
+
+            <div class="toys__colors">
+              <span class="toys__title">Цвет:</span>
+              <div class="toys__colors_count">
+                <button class="toys__color"></button>
+                <button class="toys__color"></button>
+                <button class="toys__color"></button>
+                <button class="toys__color"></button>
+                <button class="toys__color"></button>
+              </div>
+            </div>
+
+            <div class="toys__dimensions">
+              <span class="toys__title">Размер:</span>
+              <div class="toys__dimensions_count">
+                <button class="toys__size toys__size_big"></button>
+                <button class="toys__size toys__size_average"></button>
+                <button class="toys__size toys__size_small"></button>
+              </div>
+            </div>
+
+            <div class="toys__years">
+              <span class="toys__title">Год приобретения:</span>
+              <div class="toys__years_count">
+                <button class="toys__year">1940</button>
+                <button class="toys__year">1950</button>
+                <button class="toys__year">1960</button>
+                <button class="toys__year">1970</button>
+                <button class="toys__year">1980</button>
+                <button class="toys__year">1990</button>
+                <button class="toys__year">2000</button>
+                <button class="toys__year">2010</button>
+                <button class="toys__year">2020</button>
+              </div>
+            </div>
+
+            <div class="toys__count">
+              <span class="toys__title">Количество экземпляров:</span>
+              <div class="toys__count_range range">
+                <output class="toys__count_show">0</output>
+                <input type="range" name="count" min="1" max="12" value="0" class="toys__range">
+              </div>
+            </div>
+
+            <div class="reset">
+              <button class="reset__btn">Сброс фильтров</button>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>

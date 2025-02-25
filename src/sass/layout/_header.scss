@@ -25,11 +25,6 @@
   transition: 0.3s color ease-in-out;
 };
 
-.header__link:hover, .header__icon:hover {
-  transition: 0.3s color ease-in-out;
-  color: a.$color-border;
-};
-
 .header__link_active {
   color: a.$color-border;
 };
