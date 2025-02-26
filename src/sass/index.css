@@ -691,7 +691,12 @@ li {
   justify-content: space-between;
 }
 
-.toys__forms, .toys__colors, .toys__dimensions, .toys__years, .toys__count, .toys__select-form {
+.toys__forms, .toys__colors,
+.toys__dimensions,
+.toys__years,
+.toys__count,
+.toys__select-form,
+.toys__favorite-btn {
   margin: 0 0 15px 0;
 }
 
@@ -840,7 +845,7 @@ li {
 .reset__btn {
   padding: 8px 20px;
   border-radius: 7px;
-  font-size: 1.7rem;
+  font-size: 2rem;
   outline: none;
   border: none;
   cursor: pointer;
@@ -923,6 +928,12 @@ li {
   border-bottom: 20px solid transparent;
   border-left: 20px solid #ffffff;
   right: -21px;
+}
+
+.toys__favorite-checbox {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
 }
 
 .christmas-tree {

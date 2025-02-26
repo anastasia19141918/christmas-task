@@ -25,7 +25,12 @@
 
 //filter
 
-.toys__forms, .toys__colors, .toys__dimensions, .toys__years, .toys__count, .toys__select-form {
+.toys__forms, .toys__colors, 
+.toys__dimensions, 
+.toys__years, 
+.toys__count, 
+.toys__select-form,
+.toys__favorite-btn {
   margin: 0 0 15px 0;
 }
 
@@ -174,7 +179,7 @@
 .reset__btn {
   padding: 8px 20px;
   border-radius: 7px;
-  font-size: 1.7rem;
+  font-size: 2.0rem;
   outline: none;
   border: none;
   cursor: pointer;
@@ -266,6 +271,14 @@
   border-bottom: 20px solid transparent;
   border-left: 20px solid a.$color-text;
   right: -21px;
+};
+
+//checbox
+
+.toys__favorite-checbox {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
 }
 
 
