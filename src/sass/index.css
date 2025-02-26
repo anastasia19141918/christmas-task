@@ -684,6 +684,13 @@ li {
     opacity: 1;
   }
 }
+.toys__main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .toys__forms, .toys__colors, .toys__dimensions, .toys__years, .toys__count, .toys__select-form {
   margin: 0 0 15px 0;
 }
@@ -845,6 +852,77 @@ li {
   padding: 10px 15px;
   border-radius: 5px;
   font-size: 1.5rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  gap: 20px 20px;
+}
+
+.card {
+  position: relative;
+  padding: 20px 20px;
+  border-radius: 5px;
+  background-color: rgba(70, 130, 180, 0.7);
+  cursor: pointer;
+}
+
+.card__title {
+  margin: 0 0 20px 0;
+  font-size: 2.5rem;
+  color: #000000;
+}
+
+.card__information {
+  display: flex;
+  flex-direction: row;
+  gap: 0 20px;
+}
+
+.card__img {
+  width: 90px;
+  height: 90px;
+}
+
+.card__text {
+  margin: 0 0 10px 0;
+  font-size: 2rem;
+  color: #000000;
+}
+
+.card__text span {
+  padding: 0 0 0 5px;
+}
+
+.card__favorite {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  top: 230px;
+  left: -8px;
+  background-color: #ffffff;
+}
+
+.card__favorite::before {
+  position: absolute;
+  top: -8px;
+  content: "";
+  height: 0;
+  width: 0;
+  border-bottom: 8px solid #DCDCDC;
+  border-left: 8px solid transparent;
+}
+
+.card__favorite::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #ffffff;
+  right: -21px;
 }
 
 .christmas-tree {

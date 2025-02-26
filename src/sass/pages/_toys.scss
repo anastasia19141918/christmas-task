@@ -16,6 +16,13 @@
   100%{opacity: 1;}
 };
 
+.toys__main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 //filter
 
 .toys__forms, .toys__colors, .toys__dimensions, .toys__years, .toys__count, .toys__select-form {
@@ -183,6 +190,83 @@
   font-size: 1.5rem;
 };
 
+//cards
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  gap: 20px 20px;
+}
+
+.card {
+  position: relative;
+  padding: 20px 20px;
+  border-radius: 5px;
+  background-color: a.$color-toys-card;
+  cursor: pointer;
+}
+
+.card__title {
+  margin: 0 0 20px 0;
+  font-size: 2.5rem;
+  color: a.$color-text-button;
+};
+
+.card__information {
+  display: flex;
+  flex-direction: row;
+  gap: 0 20px;
+}
+
+.card__img {
+  width: 90px;
+  height: 90px;
+};
+
+.card__text {
+  margin: 0 0 10px 0;
+  font-size: 2.0rem;
+  color: a.$color-text-button;
+};
+
+.card__text span {
+  padding: 0 0 0 5px;
+};
+
+//ribbon
+
+.card__favorite {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  top: 230px;
+  left: -8px;
+  
+  background-color: a.$color-text;
+};
+
+.card__favorite::before {
+  position: absolute;
+  top: -8px;
+  content: "";
+  height: 0;
+  width: 0;
+
+  border-bottom: 8px solid a.$color-toys-card-text;
+  border-left: 8px solid transparent;
+};
+
+.card__favorite::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid a.$color-text;
+  right: -21px;
+}
 
 
 
