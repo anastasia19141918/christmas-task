@@ -684,7 +684,7 @@ li {
     opacity: 1;
   }
 }
-.toys__forms, .toys__colors, .toys__dimensions, .toys__years, .toys__count {
+.toys__forms, .toys__colors, .toys__dimensions, .toys__years, .toys__count, .toys__select-form {
   margin: 0 0 15px 0;
 }
 
@@ -811,7 +811,7 @@ li {
 }
 
 .toys__count_show {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   font-weight: 600;
 }
 
@@ -826,6 +826,10 @@ li {
   width: 100%;
 }
 
+.reset {
+  margin: 3.5rem 0 0 0;
+}
+
 .reset__btn {
   padding: 8px 20px;
   border-radius: 7px;
@@ -835,6 +839,12 @@ li {
   cursor: pointer;
   transition: 0.4s ease-in-out;
   background-color: #D9756C;
+}
+
+.toys__sort {
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1.5rem;
 }
 
 .christmas-tree {

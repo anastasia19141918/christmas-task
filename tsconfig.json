@@ -4,5 +4,5 @@
     "experimentalDecorators": true,
     "outDir": "src/dist"
   },
-    "include": ["src/ts/btns.ts", "src/ts/toys.ts"]
+    "include": ["src/ts/btns.ts", "src/ts/toys.ts", "src/ts/balls.ts"]
 }
