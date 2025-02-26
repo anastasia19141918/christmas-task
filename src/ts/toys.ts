@@ -1,5 +1,6 @@
 const toysRange = document.getElementById('toys__range') as HTMLInputElement;
+const toysCountShow = document.getElementById('toys__count_show');
 
 toysRange.addEventListener ('change', function(){
-  console.log(toysRange.value);
+  toysCountShow.textContent = toysRange.value;
 })
