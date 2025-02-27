@@ -67,11 +67,16 @@ function creat(el) {
   };
   if (favoriteSpan.innerText ===  'true') {
     favoriteSpan.innerText = 'Да';
-  }
+  };
+
+  let ribbon = document.createElement('div');
+  ribbon.classList.add('card__favorite');
 
   cards.appendChild(card);
   card.appendChild(title);
   card.appendChild(information);
+  card.appendChild(ribbon);
+
   information.appendChild(img);
   information.appendChild(desk);
 
