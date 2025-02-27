@@ -866,6 +866,7 @@ li {
 }
 
 .card {
+  width: 280px;
   position: relative;
   padding: 20px 20px;
   border-radius: 5px;
@@ -874,8 +875,9 @@ li {
 }
 
 .card__title {
+  width: 100%;
   margin: 0 0 20px 0;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   color: #000000;
 }
 
@@ -890,9 +892,14 @@ li {
   height: 90px;
 }
 
+.card__desk {
+  display: flex;
+  flex-direction: column;
+}
+
 .card__text {
   margin: 0 0 10px 0;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #000000;
 }
 
@@ -904,7 +911,7 @@ li {
   position: absolute;
   width: 80px;
   height: 40px;
-  top: 230px;
+  top: 200px;
   left: -8px;
   background-color: #ffffff;
 }
