@@ -340,10 +340,29 @@ li {
   border-radius: 5px;
   transition: 0.4s ease-in-out;
 }
+@media (max-width: 1070px) {
+  .toys__ball:hover, .toys__size:hover, .toys__year:hover {
+    border-radius: 0px;
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 1070px) {
+  .toys__year:hover {
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+}
 
 .header__link:hover, .header__icon:hover {
   transition: 0.3s color ease-in-out;
   color: #730202;
+}
+@media (max-width: 1070px) {
+  .header__link:hover, .header__icon:hover {
+    border-radius: 0px;
+    color: #F2C12E;
+  }
 }
 
 .wrapper {
@@ -420,6 +439,10 @@ li {
 }
 
 .header__link_active {
+  color: #730202;
+}
+
+.header__link_active:hover {
   color: #730202;
 }
 

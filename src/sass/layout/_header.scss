@@ -56,3 +56,7 @@
 .header__link_active {
   color: a.$color-border;
 };
+
+.header__link_active:hover {
+  color: a.$color-border;
+}
