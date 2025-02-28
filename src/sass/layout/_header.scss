@@ -14,7 +14,8 @@
 .header__nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: end;
+  gap: 0px 20px;
   @include m.mobale-big-cards {
     justify-content: left;
     gap: 0 46%;
@@ -30,6 +31,7 @@
 .header__navigation {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 0px 20px;
 };
 
