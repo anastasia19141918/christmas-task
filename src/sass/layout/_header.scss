@@ -1,4 +1,5 @@
 @use "../abstract/constans" as a;
+@use "../abstract/mixin" as m;
 
 .header {
   padding: 20px 10px;
@@ -7,7 +8,11 @@
 .header__nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between
+  justify-content: space-between;
+  @include m.mobale-big-cards {
+    justify-content: left;
+    gap: 0 46%;
+  };
 };
 
 .header__navigation {
@@ -23,6 +28,15 @@
   color: a.$color-link;
   cursor: pointer;
   transition: 0.3s color ease-in-out;
+  @include m.tablet-cards {
+    font-size: 2.2rem;
+  };
+  @include m.cards {
+    font-size: 1.9rem;
+  };
+  @include m.mobale-big-cards {
+    font-size: 1.5rem;
+  };
 };
 
 .header__link_active {

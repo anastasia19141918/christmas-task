@@ -81,16 +81,6 @@
               </div>
             </div>
 
-            <form class="toys__select-form">
-              <label for="toys__sort" class="toys__title">Сортировка:</label>
-              <select class="toys__sort" id="toys__sort">
-                <option class="toys__select-sort" selected value="toys__select-sort-name-max">По названию от «А» до «Я»</option>
-                <option class="toys__select-sort" value="toys__select-sort-name-min">По названию от «Я» до «А»</option>
-                <option class="toys__select-sort" value="toys__select-sort-count-max">По количеству по возрастанию</option>
-                <option class="toys__select-sort" value="toys__select-sort-count-min">По количеству по убыванию</option>
-              </select>
-            </form>
-
             <div class="toys__favorite-btn">
               <form class="toys__favorite-btn-form">
                 <label  class="toys__title" for="checkbox">Любимые бабушкины игрушки:</label>
@@ -102,6 +92,16 @@
               <span class="toys__title">Количество отмеченных игрушек:</span>
               <span class="toys__count_show">0</span>
             </div>
+
+            <form class="toys__select-form">
+              <label for="toys__sort" class="toys__title">Сортировка:</label>
+              <select class="toys__sort" id="toys__sort">
+                <option class="toys__select-sort" selected value="toys__select-sort-name-max">По названию от «А» до «Я»</option>
+                <option class="toys__select-sort" value="toys__select-sort-name-min">По названию от «Я» до «А»</option>
+                <option class="toys__select-sort" value="toys__select-sort-count-max">По количеству по возрастанию</option>
+                <option class="toys__select-sort" value="toys__select-sort-count-min">По количеству по убыванию</option>
+              </select>
+            </form>
 
             <div class="reset">
               <button class="reset__btn">Сброс фильтров</button>
@@ -122,8 +122,19 @@
         </div>
       </div>
     </section>
-
   </main>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__links">
+        <ul class="footer__itemns">
+          <li class="footer__itemn">©</li>
+          <li class="footer__itemn">2025</li>
+          <li class="footer__itemn"><a href="https://github.com/anastasia19141918" class="footer__gitub">github</a></li>
+          <li class="footer__itemn"><a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/christmas-task/christmas-task.md" class="footer__rs"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
  <script src="./src/dist/btns.js"></script>
  <script src="./src/dist/toys.js"></script>
  <script type="module" src="./src/dist/shape.js"></script>

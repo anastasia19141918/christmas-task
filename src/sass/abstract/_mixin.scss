@@ -1,15 +1,43 @@
 @use "../abstract/media" as m;
 
+@mixin desktop-big-cards {
+  @media(max-width: m.$desktop-big-cards) { @content; }
+};
+
 @mixin desktop {
   @media(max-width: m.$desktop) { @content; }
+};
+
+@mixin desktop-small-cards {
+  @media(max-width: m.$desktop-small-cards) { @content; }
+};
+
+@mixin tablet-big-cards {
+  @media(max-width: m.$tablet-big-cards) { @content; }
 };
 
 @mixin tablet-big {
   @media(max-width: m.$tablet-big) { @content; }
 };
 
+@mixin tablet-cards {
+  @media(max-width: m.$tablet-cards) { @content; }
+};
+
 @mixin tablet {
   @media(max-width: m.$tablet) { @content; }
+};
+
+@mixin tablet-small-cards {
+  @media(max-width: m.$tablet-small-cards) { @content; }
+};
+
+@mixin cards {
+  @media(max-width: m.$cards) { @content; }
+};
+
+@mixin mobale-big-cards {
+  @media(max-width: m.$mobale-big-cards) { @content; }
 };
 
 @mixin tablet-small {
