@@ -13,6 +13,12 @@
     justify-content: left;
     gap: 0 46%;
   };
+  @include m.tablet-small {
+    gap: 0 38%;
+  };
+  @include m.mobale-big {
+    gap: 0 5%;
+  }
 };
 
 .header__navigation {

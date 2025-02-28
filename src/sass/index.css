@@ -311,6 +311,11 @@ html {
   height: 100%;
   font-size: 10px;
 }
+@media (max-width: 455px) {
+  html {
+    overflow-x: hidden;
+  }
+}
 
 .body {
   position: relative;
@@ -363,6 +368,16 @@ li {
   .header__nav {
     justify-content: left;
     gap: 0 46%;
+  }
+}
+@media (max-width: 455px) {
+  .header__nav {
+    gap: 0 38%;
+  }
+}
+@media (max-width: 410px) {
+  .header__nav {
+    gap: 0 5%;
   }
 }
 
@@ -697,7 +712,7 @@ li {
 }
 @media (max-width: 455px) {
   .toys {
-    padding: 8px;
+    padding: 10px;
   }
 }
 
@@ -728,7 +743,6 @@ li {
 }
 @media (max-width: 515px) {
   .toys__main {
-    flex-direction: column;
     gap: 5rem 1rem;
   }
 }
@@ -737,11 +751,22 @@ li {
   margin: -2% 0 0 0;
   position: fixed;
 }
+@media (max-width: 1070px) {
+  .toys__filters {
+    margin: -3% 0 0 0;
+  }
+}
 @media (max-width: 515px) {
   .toys__filters {
+    position: static;
     display: grid;
     grid-template-columns: repeat(2, 0.5fr);
     gap: 10px 15px;
+  }
+}
+@media (max-width: 425px) {
+  .toys__filters {
+    grid-template-columns: repeat(1, 0.5fr);
   }
 }
 
@@ -806,6 +831,16 @@ li {
 @media (max-width: 515px) {
   .toys__title {
     font-size: 1.2rem;
+  }
+}
+@media (max-width: 455px) {
+  .toys__title {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 350px) {
+  .toys__title {
+    font-size: 1.4rem;
   }
 }
 
@@ -972,6 +1007,11 @@ li {
 .reset {
   margin: 7px 0 0 0;
 }
+@media (max-width: 455px) {
+  .reset {
+    margin: 30px 0 0 0;
+  }
+}
 
 .reset__btn {
   padding: 5px 10px;
@@ -1019,22 +1059,58 @@ li {
     grid-template-columns: repeat(2, 0.5fr);
   }
 }
+@media (max-width: 1070px) {
+  .cards {
+    margin: 0 0 0 40%;
+  }
+}
+@media (max-width: 875px) {
+  .cards {
+    margin: 0 0 0 45%;
+  }
+}
+@media (max-width: 765px) {
+  .cards {
+    margin: 0 0 0 42%;
+    gap: 15px 15px;
+  }
+}
 @media (max-width: 740px) {
   .cards {
+    margin: 0 0 0 56%;
     grid-template-columns: repeat(1, 0.5fr);
+  }
+}
+@media (max-width: 606px) {
+  .cards {
+    margin: 0 0 0 60%;
   }
 }
 @media (max-width: 515px) {
   .cards {
+    margin: 0 0 0 15px;
     grid-template-columns: repeat(2, 0.3fr);
     gap: 10px 20px;
-    justify-content: center;
+    justify-items: center;
   }
 }
 @media (max-width: 455px) {
   .cards {
+    margin: 0 0 0 1px;
     grid-template-columns: repeat(2, 0.2fr);
     gap: 7px 7px;
+  }
+}
+@media (max-width: 425px) {
+  .cards {
+    margin: 0 0 0 15%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px 7px;
+  }
+}
+@media (max-width: 365px) {
+  .cards {
+    margin: 0 0 0 10%;
   }
 }
 
@@ -1071,6 +1147,16 @@ li {
     width: 150px;
   }
 }
+@media (max-width: 425px) {
+  .card {
+    width: 220px;
+  }
+}
+@media (max-width: 350px) {
+  .card {
+    width: 170px;
+  }
+}
 
 .card__title {
   width: 100%;
@@ -1101,6 +1187,16 @@ li {
 @media (max-width: 606px) {
   .card__title {
     font-size: 1.4rem;
+  }
+}
+@media (max-width: 425px) {
+  .card__title {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 350px) {
+  .card__title {
+    font-size: 1.5rem;
   }
 }
 
@@ -1181,6 +1277,16 @@ li {
     font-size: 1.3rem;
   }
 }
+@media (max-width: 425px) {
+  .card__text {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 350px) {
+  .card__text {
+    font-size: 1.3rem;
+  }
+}
 
 .card__text span {
   padding: 0 0 0 5px;
@@ -1213,6 +1319,11 @@ li {
 @media (max-width: 740px) {
   .card__favorite {
     top: 150px;
+  }
+}
+@media (max-width: 425px) {
+  .card__favorite {
+    width: 60px;
   }
 }
 
@@ -1258,6 +1369,18 @@ li {
   display: flex;
   flex-direction: row;
   gap: 0 10px;
+}
+@media (max-width: 455px) {
+  .toys__favorite-btn-form,
+  .toys__marked {
+    gap: 0 5px;
+  }
+}
+@media (max-width: 455px) {
+  .toys__favorite-btn-form,
+  .toys__marked {
+    flex-direction: column;
+  }
 }
 
 .toys__favorite-checbox {

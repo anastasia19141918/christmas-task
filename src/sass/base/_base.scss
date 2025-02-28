@@ -4,6 +4,9 @@
 html {
   height: 100%;
   font-size: 10px;
+  @include m.tablet-small {
+    overflow-x: hidden;
+  }
 };
 
 .body {

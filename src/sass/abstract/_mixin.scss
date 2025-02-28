@@ -44,6 +44,10 @@
   @media(max-width: m.$tablet-small) { @content; }
 };
 
+@mixin modale-small-cards {
+  @media(max-width: m.$modale-small-cards) { @content; }
+};
+
 @mixin mobale-big {
   @media(max-width: m.$mobale-big) { @content; }
 };

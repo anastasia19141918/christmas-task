@@ -8,7 +8,7 @@
     padding: 15px;
   };
   @include m.tablet-small {
-    padding: 8px;
+    padding: 10px;
   }
 };
 
@@ -32,7 +32,6 @@
     justify-content: space-between;
   };
   @include m.mobale-big-cards {
-    flex-direction: column;
     gap: 5.0rem 1.0rem;
   }
 };
@@ -42,11 +41,18 @@
 .toys__filters {
   margin: -2% 0 0 0;
   position: fixed;
+  @include m.desktop-small-cards {
+    margin: -3% 0 0 0;
+  };
   @include m.mobale-big-cards {
+    position: static;
     display: grid;
     grid-template-columns: repeat(2, 0.5fr);
     gap: 10px 15px;
   };
+  @include m.modale-small-cards {
+    grid-template-columns: repeat(1, 0.5fr);
+  }
 };
 
 .toys__forms, .toys__colors, 
@@ -93,6 +99,12 @@
   };
   @include m.mobale-big-cards {
     font-size: 1.2rem;
+  };
+  @include m.tablet-small {
+    font-size: 1.6rem;
+  };
+  @include m.mobale-small {
+    font-size: 1.4rem;
   }
 };
 
@@ -244,6 +256,9 @@
 
 .reset {
   margin: 7px 0 0 0;
+  @include m.tablet-small {
+    margin: 30px 0 0 0;
+  }
 }
 
 .reset__btn {
@@ -257,7 +272,7 @@
   background-color: a.$color-button;
   @include m.cards {
     font-size: 1.4rem;
-  }
+  };
 };
 
 //select option
@@ -287,18 +302,43 @@
   @include m.desktop-big-cards {
     grid-template-columns: repeat(2, 0.5fr);
   };
+  @include m.desktop-small-cards {
+    margin: 0 0 0 40%;
+  };
+  @include m.tablet-cards {
+    margin: 0 0 0 45%;
+  };
+  @include m.tablet {
+    margin: 0 0 0 42%;
+    gap: 15px 15px;
+  };
   @include m.tablet-small-cards {
+    margin: 0 0 0 56%;
     grid-template-columns: repeat(1, 0.5fr);
   };
+  @include m.cards {
+    margin: 0 0 0 60%;
+  };
   @include m.mobale-big-cards {
+    margin: 0 0 0 15px;
     grid-template-columns: repeat(2, 0.3fr);
     gap: 10px 20px;
-    justify-content: center;
+    justify-items: center;
   };
   @include m.tablet-small {
+    margin: 0 0 0 1px;
     grid-template-columns: repeat(2, 0.2fr);
     gap: 7px 7px;
-  }
+  };
+  @include m.modale-small-cards {
+    margin: 0 0 0 15%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px 7px;
+  };
+  @include m.mobale {
+    margin: 0 0 0 10%
+  };
+
 };
 
 .card {
@@ -322,6 +362,12 @@
   };
   @include m.cards {
     width: 150px;
+  };
+  @include m.modale-small-cards {
+    width: 220px;
+  };
+  @include m.mobale-small {
+    width: 170px;
   }
 }
 
@@ -344,6 +390,12 @@
   };
   @include m.cards {
     font-size: 1.4rem;
+  };
+  @include m.modale-small-cards {
+    font-size: 1.7rem;
+  };
+  @include m.mobale-small {
+    font-size: 1.5rem;
   }
 };
 
@@ -402,6 +454,12 @@
   };
   @include m.cards {
     font-size: 1.3rem;
+  };
+  @include m.modale-small-cards {
+    font-size: 1.5rem;
+  };
+  @include m.mobale-small {
+    font-size: 1.3rem;
   }
 };
 
@@ -433,6 +491,9 @@
   };
   @include m.tablet-small-cards {
     top: 150px;
+  };
+  @include m.modale-small-cards {
+    width: 60px;
   }
 };
 
@@ -478,6 +539,12 @@
   display: flex;
   flex-direction: row;
   gap: 0 10px;
+  @include m.tablet-small {
+    gap: 0 5px;
+  };
+  @include m.tablet-small {
+    flex-direction: column;
+  };
 }
 
 .toys__favorite-checbox {
