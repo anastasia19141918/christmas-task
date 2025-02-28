@@ -12,6 +12,10 @@
   @media(max-width: m.$desktop-small-cards) { @content; }
 };
 
+@mixin desktop-filter-big {
+  @media(max-width: m.$desktop-filter-big) { @content; }
+};
+
 @mixin tablet-big-cards {
   @media(max-width: m.$tablet-big-cards) { @content; }
 };
@@ -24,6 +28,14 @@
   @media(max-width: m.$tablet-cards) { @content; }
 };
 
+@mixin tablet-filter {
+  @media(max-width: m.$tablet-filter) { @content; }
+};
+
+@mixin tablet-big-filter {
+  @media(max-width: m.$tablet-big-filter) { @content; }
+};
+
 @mixin tablet {
   @media(max-width: m.$tablet) { @content; }
 };
@@ -32,8 +44,16 @@
   @media(max-width: m.$tablet-small-cards) { @content; }
 };
 
+@mixin tablet-small-filter {
+  @media(max-width: m.$tablet-small-filter) { @content; }
+};
+
 @mixin cards {
   @media(max-width: m.$cards) { @content; }
+};
+
+@mixin cards-filter {
+  @media(max-width: m.$cards-filter) { @content; }
 };
 
 @mixin mobale-big-cards {

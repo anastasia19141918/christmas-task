@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 0 1.0rem;
+  gap: 6rem 1.0rem;
   @include m.desktop-big-cards {
     justify-content: space-between;
   };
@@ -39,12 +39,20 @@
 //filter
 
 .toys__filters {
-  margin: -2% 0 0 0;
+  margin: -3% 0 0 -2%;
   position: fixed;
-  @include m.desktop-small-cards {
-    margin: -3% 0 0 0;
+  @include m.desktop {
+    margin: -5% 0 0 -2%;
   };
-  @include m.mobale-big-cards {
+
+  @include m.tablet-cards {
+    margin: 0% 0 0 -2%;
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    gap: 10px 15px;
+  };
+  
+  @include m.tablet-small-cards {
     position: static;
     display: grid;
     grid-template-columns: repeat(2, 0.5fr);
@@ -52,6 +60,9 @@
   };
   @include m.modale-small-cards {
     grid-template-columns: repeat(1, 0.5fr);
+  };
+  @include m.modale-small-cards {
+    margin: 0% 0 0 0;
   }
 };
 
@@ -80,11 +91,12 @@
   @include m.cards {
     font-size: 1.2rem;
   };
-  @include m.mobale-big-cards {
+  @include m.tablet-cards {
     width: 170px;
     height: 30px;
     font-size: 1.0rem;
   };
+  
 };
 
 .toys__title {
@@ -92,9 +104,6 @@
   margin: 0 0 10px 0;
   font-size: 1.5rem;
   @include m.tablet-cards {
-    font-size: 1.7rem;
-  };
-  @include m.cards {
     font-size: 1.5rem;
   };
   @include m.mobale-big-cards {
@@ -256,9 +265,9 @@
 
 .reset {
   margin: 7px 0 0 0;
-  @include m.tablet-small {
+  @include m.tablet-cards {
     margin: 30px 0 0 0;
-  }
+  };
 }
 
 .reset__btn {
@@ -306,25 +315,36 @@
     margin: 0 0 0 40%;
   };
   @include m.tablet-cards {
-    margin: 0 0 0 45%;
+    margin: 0 0 0 60%;
   };
+  @include m.tablet-filter {
+    margin: 0 0 0 65%;
+    grid-template-columns: repeat(1, 0.5fr);
+  };
+  @include m.tablet-big-filter {
+    margin: 0 0 0 71%;
+  }
   @include m.tablet {
-    margin: 0 0 0 42%;
+    margin: 0 0 0 70%;
     gap: 15px 15px;
   };
   @include m.tablet-small-cards {
-    margin: 0 0 0 56%;
-    grid-template-columns: repeat(1, 0.5fr);
-  };
-  @include m.cards {
-    margin: 0 0 0 60%;
-  };
-  @include m.mobale-big-cards {
-    margin: 0 0 0 15px;
+    margin: 0 0 0 5%;
     grid-template-columns: repeat(2, 0.3fr);
     gap: 10px 20px;
     justify-items: center;
   };
+  @include m.tablet-small-filter {
+    margin: 0 0 0 1%;
+  }
+  @include m.cards {
+    margin: 0 0 0 9%;
+  };
+
+  @include m.cards-filter {
+    margin: 0 0 0 4%;
+  }
+ 
   @include m.tablet-small {
     margin: 0 0 0 1px;
     grid-template-columns: repeat(2, 0.2fr);
@@ -335,8 +355,11 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 20px 7px;
   };
+  @include m.mobale-big {
+    margin: 0 0 0 9%
+  }
   @include m.mobale {
-    margin: 0 0 0 10%
+    margin: 0 0 0 9%
   };
 
 };
@@ -355,7 +378,13 @@
     width: 190px;
   };
   @include m.tablet-cards {
-    width: 150px;
+    width: 120px;
+  };
+  @include m.tablet-filter {
+    width: 190px;
+  };
+  @include m.tablet-big-filter {
+    width: 180px;
   };
   @include m.tablet-small-cards {
     width: 220px;
@@ -383,8 +412,11 @@
     font-size: 1.5rem;
   };
   @include m.tablet-cards {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   };
+  @include m.tablet-filter {
+    font-size: 1.7rem;
+  }
   @include m.tablet-small-cards {
     font-size: 1.5rem;
   };
@@ -416,6 +448,10 @@
     height: 70px;
   };
   @include m.tablet-cards {
+    width: 30px;
+    height: 30px;
+  };
+  @include m.tablet-filter {
     width: 50px;
     height: 50px;
   };
@@ -447,8 +483,11 @@
   };
   @include m.tablet-cards {
     margin: 0 0 3px 0;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+  }@include m.tablet-filter {
+    font-size: 1.5rem;
   };
+
   @include m.tablet-small-cards {
     font-size: 1.5rem;
   };
