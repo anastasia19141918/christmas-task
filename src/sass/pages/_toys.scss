@@ -161,6 +161,11 @@
   }
 };
 
+.toys__active {
+  background-color: a.$color-button;
+  border-radius: 5px;
+}
+
 .toys__colors_count {
   display: flex;
   flex-direction: row;

@@ -3,6 +3,7 @@ const btns = document.querySelectorAll('.header__link');
 const toys = document.querySelector('.toys');
 const christmasTree = document.querySelector('.christmas-tree');
 
+
 btn.addEventListener('click', function(el){
   const click:any = el.target; 
   
@@ -25,4 +26,6 @@ function getSection (element) {
     toys.classList.remove('toys__main__active');
   }
 };
+
+
 

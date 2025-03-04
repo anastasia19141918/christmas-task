@@ -1,22 +1,7 @@
 @use "../abstract/constans" as a;
 @use"../abstract/mixin" as m;
 
-.toys__ball:hover, .toys__size:hover, .toys__year:hover {
-  background-color: a.$color-button;
-  border-radius: 5px;
-  transition: 0.4s ease-in-out;
-  @include m.desktop-small-cards {
-    border-radius: 0px;
-    background-color: transparent;
-  }
-};
 
-.toys__year:hover {
-  @include m.desktop-small-cards {
-    background-color: a.$color-footer;
-    border-radius: 5px;
-  }
-}
 
 .header__link:hover, .header__icon:hover {
   transition: 0.3s color ease-in-out;
