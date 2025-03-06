@@ -1,11 +1,11 @@
 import data from './balls.js';
 const cards = document.getElementById('cards');
-function cardShape() {
-    data.forEach(function (el) {
-        creat(el);
-    });
+//data.forEach(function(el) {
+// creat(el);
+//})
+for (let el of data) {
+    creat(el);
 }
-;
 function creat(el) {
     let card = document.createElement('div');
     card.classList.add('card');
@@ -80,4 +80,3 @@ function creat(el) {
     favorite.appendChild(favoriteSpan);
 }
 ;
-window.addEventListener('load', cardShape);
