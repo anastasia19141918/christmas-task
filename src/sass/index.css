@@ -1475,6 +1475,10 @@ li {
   border-radius: 5px;
 }
 
+.hide {
+  display: none;
+}
+
 .christmas-tree {
   display: none;
   padding: 30px;

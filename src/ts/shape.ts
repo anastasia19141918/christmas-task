@@ -1,12 +1,11 @@
 import data from './balls.js';
 
-const cards = document.getElementById('cards');
-
 data.forEach(function(el) {
    creat(el);
-  })
+});
 
-function creat(el) {
+export default function creat(el) {
+  const cards = document.getElementById('cards');
   let card = document.createElement('div');
   card.classList.add('card');
 
